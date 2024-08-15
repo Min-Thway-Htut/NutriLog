@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400&display=swap"
+    />
+  </head>
+
+  <body>
+
+ <header>
+  <div class="navbar">
+    <div class="logo"><a href="#">NutriLog</a></div>
+    <ul class="links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Calorie Calculator</a></li>
+      <li><a href="#">BMI Calculator</a></li>
+      <li><a href="#">Articles</a></li>
+    </ul>
+    <a href="#" class="action_btn">Get Started</a>
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+
+  <div class="dropdown_menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Calorie Calculator</a></li>
+    <li><a href="#">BMI Calculator</a></li>
+    <li><a href="#">Articles</a></li>
+    <li><a href="#" class="action_btn">Get Started</a></li>
+  </div>
+ </header>
+
+
+ <script>
+  const toggleBtn = document.querySelector(".toggle_btn")
+  const toggleBtnIcon = document.querySelector(".toggle_btn i")
+  const dropDownMenu = document.querySelector("dropdown_menu")
+
+  toggleBtn.onclick = function () {
+    dropDownMenu.classList.toggle('open')
+    const isOpen = dropDownMenu.classList.contains('open')
+
+    toggleBtnIcon.classList = isOpen
+    ? 'fa-solid fa-xmarks'
+    : 'fa-solid fa-bars'
+  }
+ </script>
+
+    <div class="main-frame">
+      <section class="frame-parent">
+        <div class="frame-group">
+          <div class="embrace-a-healthy-lifestyle-wrapper">
+            <h1 class="embrace-a-healthy">Embrace a Healthy Lifestyle</h1>
+          </div>
+          <div class="discover-the-benefits">
+            Discover the benefits of staying active, eating right, and keeping
+            track of your calorie intake. Our tool helps you understand and
+            manage your daily nutritional needs for a healthier and happier
+            life.
+          </div>
+        </div>
+        <div class="frame-wrapper">
+          <div class="frame-container">
+            <div class="frame">
+              <div class="frame1">
+                <div class="frame-frame">
+                  <img
+                    class="frame-icon"
+                    loading="lazy"
+                    alt=""
+                    src="./public/frame.svg"
+                  />
+                </div>
+                <div class="exercise-regularly-wrapper">
+                  <div class="exercise-regularly">Exercise Regularly</div>
+                </div>
+                <div class="regular-physical-activity">
+                  Regular physical activity can improve your muscle strength and
+                  boost your endurance.
+                </div>
+              </div>
+              <div class="frame2">
+                <div class="frame-div">
+                  <img
+                    class="frame-icon1"
+                    loading="lazy"
+                    alt=""
+                    src="./public/frame-1.svg"
+                  />
+                </div>
+                <div class="eat-right-wrapper">
+                  <div class="eat-right">Eat Right</div>
+                </div>
+                <div class="eating-a-healthy">
+                  Eating a healthy, balanced diet is one of the most important
+                  things you can do to protect your health.
+                </div>
+              </div>
+              <div class="frame3">
+                <div class="frame-wrapper1">
+                  <img
+                    class="frame-icon2"
+                    loading="lazy"
+                    alt=""
+                    src="./public/frame-2.svg"
+                  />
+                </div>
+                <div class="count-your-calories-wrapper">
+                  <div class="count-your-calories">Calculate Your BMI</div>
+                </div>
+                <div class="keeping-track-of">
+                  Calculate your BMI and prevent health risks associated with under or over weight
+                </div>
+              </div>
+            </div>
+
+            <div class="frame-wrapper2">
+              <button class="frame4">
+                <a class="get-started" href="calorie-counter.html">Get Started</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="main-frame-inner">
+        <div class="main-interaction-button-parent">
+          <div class="main-interaction-button">
+            <div class="meal-planner">
+              <h2 class="your-personalized-meal">
+            Get to Know Your Required Calories
+              </h2>
+            </div>
+            <div class="enter-your-details">
+             Based on your input values, we will let you know your daily calories required.
+            </div>
+          </div>
+          <div class="meal-input">
+            <div class="create-meal-plan">
+              <button class="generate-text">
+               <a class="generate-meal-plan" href="dailyCalories.html">Calculate</a>
+
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-frame-inner">
+        <div class="main-interaction-button-parent">
+          <div class="main-interaction-button">
+            <div class="meal-planner">
+              <h2 class="your-personalized-meal">
+                Your Personalized Meal Planner
+              </h2>
+            </div>
+            <div class="enter-your-details">
+              Enter your details, and we'll create a meal plan tailored to your
+              calorie needs.
+            </div>
+          </div>
+          <div class="meal-input">
+            <div class="create-meal-plan">
+              <button class="generate-text">
+               <a class="generate-meal-plan" href="mealsug.html">Generate Meal Plan</a>
+
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
