@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400&display=swap"
     />
+    <script src="calorie-calculator.js" defer></script>
   </head>
 
   <body>
@@ -65,7 +66,7 @@
               <div class="frame1">
                 <div class="frame-frame">
                   
-                  </div>
+                </div>
                 <div class="exercise-regularly-wrapper">
                   <div class="exercise-regularly">Exercise Regularly</div>
                 </div>
@@ -74,6 +75,10 @@
                   boost your endurance.
                 </div>
               </div>
+
+              
+
+
               <div class="frame2">
                 <div class="frame-div">
                 </div>
@@ -96,15 +101,11 @@
                 </div>
               </div>
             </div>
-
-            <div class="frame-wrapper2">
-              <button class="frame4">
-                <a class="get-started" href="calorie-counter.html">Get Started</a>
-              </button>
-            </div>
           </div>
         </div>
       </section>
+
+ 
 
 
       <div class="main-frame-inner">
@@ -119,15 +120,43 @@
              Based on your input values, we will let you know your daily calories required.
             </div>
           </div>
-          <div class="meal-input">
-            <div class="create-meal-plan">
-              <button class="generate-text">
-               <a class="generate-meal-plan" href="dailyCalories.html">Calculate</a>
-              </button>
-            </div>
-          </div>
+          
         </div>
       </div>
+
+      <div class="bmi-container">
+        <div class="bmi-calculator">Calorie Calculator</div>
+        <form id="bmiForm">
+          <div class="input-group">
+            <label>
+              <input type="radio" name="gender" value="male" > Male
+            </label>
+            <label>
+              <input type="radio" name="gender" value="female"> Female
+          </label>
+          </div>
+  
+          <div class="input-group">
+            <label for="height">Height (cm): </label>
+            <input type="number" id="height" required>
+          </div>
+  
+          <div class="input-group">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" required>
+        </div>
+
+        <div class="input-group">
+          <label for="age">Age:</label>
+          <input type="number" id="age" required>
+        </div>
+  
+        <button type="button" onclick="calculateCalorie()">Calculate BMI</button>
+        </form>
+
+        <div id="calorie-result"></div>
+       </div>
+  
 
       <div class="main-frame-inner">
         <div class="main-interaction-button-parent">

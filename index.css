@@ -130,6 +130,11 @@ header{
     flex-shrink: 0;
     max-width: 100%;
   }
+
+  #calorie-result{
+    font-size: 20px;
+    margin-top: 5px;
+  }
   .embrace-a-healthy-lifestyle-wrapper {
     width: 747px;
     display: flex;
@@ -200,6 +205,47 @@ header{
     color: rgb(0, 0, 0)
   }
   .frame1 {
+    align-self: stretch;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-white);
+    box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.1),
+      0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 0 0#000, 0 0 0#000;
+    overflow: hidden;
+    display: flex;
+    border: solid 1px rgb(0, 0, 0,0.2);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-5xl) var(--padding-xl) var(--padding-4xl)
+      var(--padding-11xl);
+    box-sizing: border-box;
+    gap: 8.5px 0;
+    max-width: 100%;
+    background-image: url(images/frame1.webp);
+  }
+
+  label{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    margin: 0.5rem 0;
+  }
+
+  
+  .bmi-container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(229, 229, 229, 0.1);
+    max-width: 100%;
+    border: solid 1px rgb(0, 0, 0,0.2);
+    padding-left: 151px;
+    padding-right: 151px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .frame4{
     align-self: stretch;
     border-radius: var(--br-5xs);
     background-color: var(--color-white);
@@ -545,6 +591,22 @@ header{
     background-color: #c7c2b2;
     padding-top: 18px;
     padding-bottom: 18px;
+  }
+
+  
+  button{
+    background-color: orange;
+    border-radius: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border: rgb(0,0,0,0.1);
+    cursor: pointer;
+  }
+
+  button:hover{
+    background-color: rgb(225, 147, 2);
   }
 
   .copyright{
