@@ -20,7 +20,7 @@ a{
 }
 
 a:hover{
-  color: orange;
+  color: rgb(0, 0, 0);
 }
 
 
@@ -207,6 +207,7 @@ header{
       0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 0 0#000, 0 0 0#000;
     overflow: hidden;
     display: flex;
+    border: solid 1px rgb(0, 0, 0,0.2);
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
@@ -270,6 +271,7 @@ header{
     background-image: url(images/frame2.webp);
     box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.1),
       0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 0 0#000, 0 0 0#000;
+      border: solid 1px rgb(0, 0, 0,0.2);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -340,6 +342,7 @@ header{
     background-color: black;
     box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.1),
       0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 0 0#000, 0 0 0#000;
+      border: solid 1px rgb(0, 0, 0,0.2);
     overflow: hidden;
     padding: var(--padding-5xl) 15px var(--padding-4xl) 26px;
     box-sizing: border-box;
@@ -378,8 +381,8 @@ header{
   }
   .frame4:hover,
   .generate-text:hover {
-    background-color: rgb(235, 152, 0);
-  }
+    color: black;
+    background-color: rgb(225, 147, 2); }
   .frame-wrapper2 {
     align-self: stretch;
     justify-content: center;
@@ -491,12 +494,7 @@ header{
   }
   .create-meal-plan {
     flex: 1;
-    background-color: var(--color-white);
-    box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.1),
-      0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 0 0#000, 0 0 0#000;
-    overflow: hidden;
     justify-content: center;
-    padding: var(--padding-13xl) var(--padding-xl);
     max-width: 100%;
   }
   .main-interaction-button-parent,
@@ -541,6 +539,18 @@ header{
     font-size: var(--font-size-11xl);
     color: var(--color-seagreen);
     font-family: var(--font-roboto);
+  }
+
+  footer{
+    background-color: #c7c2b2;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .copyright{
+    text-align: center;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
   }
   @media screen and (max-width: 800px) {
     .embrace-a-healthy {
@@ -661,3 +671,4 @@ header{
 #copyright:hover{
   color: black;
 }
+
