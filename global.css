@@ -17,17 +17,17 @@ body {
   --font-size-sm: 14px;
 
   /* Colors */
-  --color-mintcream: linear-gradient(to right, #00c217, #b6fbff);
+  --color-mintcream: white;
 
   --color-white: #fff;
-  --color-mediumspringgreen: #22c55e;
-  --color-forestgreen: #08ab45;
-  --color-darkslategray: #374151;
-  --color-seagreen: #15803d;
-  --color-dimgray: #4b5563;
-  --color-gray: #1f2937;
-  --color-lightgreen: #86efac;
-  --color-darkgray: #b2b2b2;
+  --color-mediumspringgreen: #ffffff;
+  --color-forestgreen: #ffffff;
+  --color-darkslategray: #000000;
+  --color-seagreen: #000000;
+  --color-dimgray: #000000;
+  --color-gray: #134396;
+  --color-lightgreen: #ff0000;
+  --color-darkgray: #ff0000;
 
   /* Gaps */
   --gap-mini: 15px;
