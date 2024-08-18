@@ -61,7 +61,7 @@ function calculateBMI(){
     } else if (userValidAge === "no"){
         document.getElementById('bmi-result').innerHTML = "Sorry, we cannot assure the correct result based on your age."
     } else{
-        document.getElementById('bmi-result').innerHTML = "Please select your gender!";
+        document.getElementById('bmi-result').innerHTML = "Please select your age!";
     }
 
  
