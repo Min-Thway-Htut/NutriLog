@@ -51,7 +51,7 @@ header{
 }
 
 .navbar .toggle_btn{
-  color: #ffff;
+  color: #000000;
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
@@ -133,7 +133,7 @@ header{
 
   #calorie-result{
     font-size: 20px;
-    margin-top: 5px;
+    margin-top: 9px;
   }
   .embrace-a-healthy-lifestyle-wrapper {
     width: 747px;
@@ -245,6 +245,7 @@ header{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
+
   .frame4{
     align-self: stretch;
     border-radius: var(--br-5xs);
@@ -482,6 +483,20 @@ header{
     max-width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
+  
+  .title-second-bmi{
+    margin: 0;
+    flex: 1;
+    color: black;
+    position: relative;
+    font-size: inherit;
+    line-height: 36px;
+    font-weight: 600;
+    font-family: inherit;
+    display: inline-block;
+    max-width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
   .meal-planner {
     align-self: stretch;
     display: flex;
@@ -609,6 +624,10 @@ header{
     background-color: rgb(225, 147, 2);
   }
 
+  #bmi-result{
+    font-size: 20px;
+    margin-top: 9px;
+  }
   .copyright{
     text-align: center;
     font-size: 13px;
@@ -640,6 +659,24 @@ header{
     }
     .main-interaction-button-parent {
       gap: 16px 0;
+    }
+  }
+
+  @media screen and (max-width: 500px){
+    .bmi-container{
+      text-align:justify;
+      padding-left: 60px;
+      padding-right: 60px;
+      width: 85%;
+    }
+    .bmi-calculator{
+      font-size: 20px;
+    }
+    #calorie-result{
+      font-size: 15px;
+    }
+    #bmi-result{
+      font-size: 15px;
     }
   }
   @media screen and (max-width: 450px) {
