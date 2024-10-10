@@ -204,6 +204,12 @@ header{
     font-weight: 450;
     color: rgb(0, 0, 0)
   }
+  input[type=number]{
+    width: 100%;
+  }
+  input[type=radio]{
+    width: 100%;
+  }
   .frame1 {
     align-self: stretch;
     border-radius: var(--br-5xs);
@@ -237,8 +243,8 @@ header{
     background-color: rgba(229, 229, 229, 0.1);
     max-width: 100%;
     border: solid 1px rgb(0, 0, 0,0.2);
-    padding-left: 151px;
-    padding-right: 151px;
+    padding-left: 87px;
+    padding-right: 87px;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 10px;
@@ -608,9 +614,25 @@ header{
     padding-bottom: 18px;
   }
 
+  #bmi-button, #calorie-button{
+    background-color: #ffcc00;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+
+  #bmi-button:hover{
+    background-color: #ff9900;
+  }
+  #calorie-button:hover{
+    background-color: #ff9900;
+  }
   
   button{
-    background-color: orange;
+    background-color: rgb(211, 199, 177);
     border-radius: 6px;
     padding-top: 4px;
     padding-bottom: 4px;
